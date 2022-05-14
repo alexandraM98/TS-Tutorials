@@ -7,8 +7,8 @@ character = 'luigi';
 age = 40;
 // isBlackBelt = 'yes';
 isBlackBelt = true;
-var area = function (diameter) {
+var circ = function (diameter) {
     return diameter * Math.PI;
 };
 // console.log(area('hello'));
-console.log(area(7.5));
+console.log(circ(7.5));
