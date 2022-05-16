@@ -1,7 +1,6 @@
-import { Invoice } from './classes/Invoice.js';
 
 // interfaces
-export interface IsPerson {
+export interface IsPerson { //An interface allows us to enforce a certain structure of a class or an object. We use it to describe what methods, etc it should have.
   name: string;
   age?: number;
   speak(a: string): void;
