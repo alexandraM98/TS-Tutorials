@@ -15,14 +15,18 @@ mixed[0] = 3;
 var ninja = {
     name: 'mario',
     belt: 'black',
-    age: 30
+    age: 30,
+    skills: ['fighting', 'sneaking', 'lying']
 };
 ninja.age = 40;
 ninja.name = 'ryu';
 // ninja.age = '30';
 // ninja.skills = ['fighting', 'sneaking']
+var str = JSON.stringify(ninja);
+console.log(str);
 ninja = {
     name: 'yoshi',
     belt: 'orange',
-    age: 40
+    age: 40,
+    skills: ['sleeping', 'procrastinating']
 };
