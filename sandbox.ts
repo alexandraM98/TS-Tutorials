@@ -31,6 +31,7 @@ ninjaOne = { name: 'yoshi', age: 30 };
 let ninjaTwo: {
   name: string,
   age: number,
-  beltColour: string
+  beltColour: string,
+  skills: string[],
 };
-ninjaTwo = { name: 'ken', age: 20, beltColour: 'black' };
+ninjaTwo = { name: 'ken', age: 20, beltColour: 'black', skills: ['stealth', 'fighting'] };

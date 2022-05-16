@@ -21,4 +21,4 @@ var uid;
 var ninjaOne;
 ninjaOne = { name: 'yoshi', age: 30 };
 var ninjaTwo;
-ninjaTwo = { name: 'ken', age: 20, beltColour: 'black' };
+ninjaTwo = { name: 'ken', age: 20, beltColour: 'black', skills: ['stealth', 'fighting'] };
