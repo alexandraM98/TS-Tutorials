@@ -63,5 +63,5 @@
     /* Advanced Options */
     "forceConsistentCasingInFileNames": true  /* Disallow inconsistently-cased references to the same file. */
   },
-  "include": ["src"]
+  "include": ["src"] //Only compile files inside the src folder. "tsc -w" will watch all of the TS files INSIDE of the src folder.
 }
