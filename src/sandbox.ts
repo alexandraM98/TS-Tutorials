@@ -1,26 +1,44 @@
 // let greet: Function;
-
-// example 1
+//Example 1
 let greet: (a: string, b: string) => void;
 
-greet = (name: string, greeting: string) => {
-  console.log(`${name} says ${greeting}`);
+greet = (name, description) => {
+  console.log();
 }
 
-// example 2
-let calc: (a: number, b: number, c: string) => number;
+//Example 2
+let calc: (a: number, b: number, c?:string) => number; //Function signature
 
-calc = (numOne: number, numTwo: number, action: string) => {
-  if (action === 'add') {
-    return numOne + numTwo;
+calc = (num1, num2, desc) => {
+  return num1 + num2;
+}
+
+let n1 = 5;
+let n2 = 10;
+
+console.log(calc(n1, n2));
+
+//Example 3
+let calc1: (a: number, b: number, c: string) => number;
+
+calc1 = (numberOne, numberTwo, action) => {
+  if (action === "sum") {
+    return numberOne + numberTwo;
   } else {
-    return numOne - numTwo;
+    return numberOne - numberTwo;
   }
 }
 
-// example 3
+//Example 4
 let logDetails: (obj: {name: string, age: number}) => void;
 
-logDetails = (ninja: {name: string, age: number}) => {
-  console.log(`${ninja.name} is ${ninja.age} years old`);
+logDetails = (ninja) => {
+  console.log(ninja.name, ninja.age);
 }
+
+let ninja = {
+  name: 'Alex',
+  age: 23
+};
+
+logDetails(ninja);

@@ -1,22 +1,35 @@
 "use strict";
 // let greet: Function;
-// example 1
+//Example 1
 var greet;
-greet = function (name, greeting) {
-    console.log(name + " says " + greeting);
+greet = function (name, description) {
+    console.log();
 };
-// example 2
-var calc;
-calc = function (numOne, numTwo, action) {
-    if (action === 'add') {
-        return numOne + numTwo;
+//Example 2
+var calc; //Function signature
+calc = function (num1, num2, desc) {
+    return num1 + num2;
+};
+var n1 = 5;
+var n2 = 10;
+console.log(calc(n1, n2));
+//Example 3
+var calc1;
+calc1 = function (numberOne, numberTwo, action) {
+    if (action === "sum") {
+        return numberOne + numberTwo;
     }
     else {
-        return numOne - numTwo;
+        return numberOne - numberTwo;
     }
 };
-// example 3
+//Example 4
 var logDetails;
 logDetails = function (ninja) {
-    console.log(ninja.name + " is " + ninja.age + " years old");
+    console.log(ninja.name, ninja.age);
 };
+var ninja = {
+    name: 'Alex',
+    age: 23
+};
+logDetails(ninja);
