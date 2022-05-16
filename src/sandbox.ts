@@ -1,23 +1,20 @@
-// let greet: Function = () => {
-//   console.log('hello, world');
-// }
+let greet: Function;
 
-// greet = 'hello';
+greet = () => {
+  console.log('Hello, world!');
+};
 
-// greet = () => {
-//   console.log('hello, again');
-// }
-
-const add = (a: number, b: number, c/*?*/: number | string = 10): void => {
+const add = (a: number, b: number, c: number|string = 10): void => {
   console.log(a + b);
   console.log(c);
-}
+};
 
-add(5, 10, 'ninja');
+add(5, 10, 50);
+
+//c? = optional parameter
 
 const minus = (a: number, b: number): number => {
-  return a + b;
-}
+    return a + b;
+};
 
-let result = minus(10,7);
-console.log(result);
+let result = minus(10, 7); //it automatically infers the type from the function's return, so now the 'result' variable can only be assigned a number value
