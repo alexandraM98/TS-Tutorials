@@ -1,23 +1,11 @@
-// let greet: Function = () => {
-//   console.log('hello, world');
-// }
+type StringOrNum = string | number; //Defining my own type alias
+type objWithName = {name: string, uid: StringOrNum}; //Another example of a type alias.
 
-// greet = 'hello';
+const logDetails = (uid: StringOrNum, item: string) => {
+  console.log(`${item} has a uid of ${uid}`);
+};
 
-// greet = () => {
-//   console.log('hello, again');
-// }
-
-const add = (a: number, b: number, c/*?*/: number | string = 10): void => {
-  console.log(a + b);
-  console.log(c);
+const greet = (user: objWithName) => {
+  console.log(`${user.name} says Hello!`);
 }
 
-add(5, 10, 'ninja');
-
-const minus = (a: number, b: number): number => {
-  return a + b;
-}
-
-let result = minus(10,7);
-console.log(result);
