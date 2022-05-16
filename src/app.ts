@@ -23,7 +23,7 @@ form.addEventListener('submit', (e: Event) => {
 
   let doc: HasFormatter;
   if (type.value === 'invoice') {
-    doc = new Invoice(...values);
+    doc = new Invoice(...values); //the spread operator (...)
   } else {
     doc = new Payment(...values);
   }
@@ -31,16 +31,13 @@ form.addEventListener('submit', (e: Event) => {
   list.render(doc, type.value, 'end');
 });
 
-// TUPLES
-let arr = ['ryu', 25, true];
+// TUPLES  (tiupal)
+let arr = ['ryu', 2, true];
 arr[0] = false;
 arr[1] = 'yoshi';
-arr = [30, false, 'yoshi'];
+arr = [false, 'yoshi, 30'];
 
 let tup: [string, number, boolean] = ['ryu', 25, true];
-// tup[0] = false;
-tup[0] = 'ken';
 
-let student: [string, number];
-//student = [23564, 'chun-li'];
-student = ['chun-li', 23564];
+// let student: [string, number];
+// student = ['Alex', 23];
