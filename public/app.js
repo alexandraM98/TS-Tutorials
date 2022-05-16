@@ -5,12 +5,16 @@ var Invoice = /** @class */ (function () {
     // private details: string;
     // public amount: number;
     function Invoice(client, details, amount) {
+        var _this = this;
         this.client = client;
         this.details = details;
         this.amount = amount;
+        this.getInvoice = function () {
+            return _this.details;
+        };
     }
     Invoice.prototype.format = function () {
-        return this.client + " owes \u00A3" + this.amount + " for " + this.details;
+        return "".concat(this.client, " owes \u00A3").concat(this.amount, " for ").concat(this.details);
     };
     return Invoice;
 }());

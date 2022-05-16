@@ -8,7 +8,12 @@ class Invoice {
     readonly client: string, 
     private details: string, 
     public amount: number,
-  ){}
+  ){
+  }
+
+  getInvoice = (): string => {
+    return this.details;
+  };
 
   format() {
     return `${this.client} owes £${this.amount} for ${this.details}`;
