@@ -1,10 +1,10 @@
 import { Invoice } from './classes/Invoice.js';
 import { Payment } from './classes/Payment.js';
-// let docOne: HasFormatter;
+// let docOne: HasFormatter; //you can use the interface as a type/docOne must implement the HasFormatter interface
 // let docTwo: HasFormatter;
 // docOne = new Invoice('yoshi', 'web work', 250);
 // docTwo = new Payment('mario', 'plumbing', 200);
-// let docs: HasFormatter[] = [];
+// let docs: HasFormatter[] = []; //Only objects which implement this interface can go inside this array.
 // docs.push(docOne);
 // docs.push(docTwo);
 const form = document.querySelector('.new-item-form');
